@@ -1,4 +1,6 @@
 # Ignored files
 
-# Ignore node Modules
+# Para evitar problemas con los modulos de Node, se debe realizar un
+# npm install
+# de forma que se instalen localmente
 node_modules
