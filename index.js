@@ -3,6 +3,7 @@ const app = express();
 
 app.use(express.json());
 
+app.disable('x-powered-by')
 const classrooms = [
     {id: 1, name: 'Lab 1',floor: 4, building: 'M1'},
     {id: 2, name: 'Lab 2',floor: 4, building: 'M1'},
@@ -11,21 +12,21 @@ const classrooms = [
 ];
 
 app.get('/', (req, res) => {
-    res.send('Node JS API working')
+    res.send('API Working...')
 });
 
-app.get('/api/classrooms', (req, res) => {
+app.get('/v1/rooms', (req, res) => {
     res.send(classrooms);
 });
 
-app.get('/api/classrooms/:id', (req, res) => {
+app.get('/v1/rooms/:id', (req, res) => {
     const classroom = classrooms.find(c => c.id === parseInt(req.params.id));
     if(!classroom) return res.status(404).send('No existe esa sala');
     else res.send(classroom);
 
 });
 
-app.post('/api/classrooms', (req, res) => {
+app.post('/v1/rooms', (req, res) => {
     const classroom = {
         id: classrooms.length + 1,
         name: req.body.name,
@@ -37,7 +38,7 @@ app.post('/api/classrooms', (req, res) => {
     res.send(classroom);
 });
 
-app.delete('/api/classrooms/:id', (req, res) => {
+app.delete('/v1/rooms/:id', (req, res) => {
     const classroom = classrooms.find(c => c.id === parseInt(req.params.id));
     if(!classroom) return res.status(404).send('No existe esa sala');
 
