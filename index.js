@@ -47,5 +47,5 @@ app.delete('/v1/rooms/:id', (req, res) => {
     res.send(classroom);
 });
 
-const port = process.env.port || 80;
-app.listen(port, () => console.log(`Listen in port ${port}...`));
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => console.log(`Listen in port ${PORT}...`));
