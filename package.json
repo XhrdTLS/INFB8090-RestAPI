@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Repositorio del Proyecto de REST API para Computación Paralela y Distribuida",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js"
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/XhrdTLS/INFB8090-RestAPI#readme",
   "dependencies": {
-    "express": "4.18.2"
+    "express": "4.18.2",
+    "cors": "2.8.5",
+    "zod": "3.21.4"
   }
 }

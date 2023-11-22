@@ -1,0 +1,121 @@
+[
+    {
+        "name": "M1-201",
+        "capacity": 30,
+        "location": 2,
+        "type": 1,
+        "id_room": 1
+    },
+    {
+        "name": "M1-202",
+        "capacity": 30,
+        "location": 2,
+        "type": 1,
+        "id_room": 2
+    },
+    {
+        "name": "M1-203",
+        "capacity": 30,
+        "location": 2,
+        "type": 1,
+        "id_room": 3
+    },
+    {
+        "name": "M1-203",
+        "capacity": 30,
+        "location": 2,
+        "type": 1,
+        "id_room": 4
+    },
+    {
+        "name": "Cancha techada",
+        "capacity": 60,
+        "location": 2,
+        "type": 3,
+        "id_room": 5
+    },
+    {
+        "name": "HUB",
+        "capacity": 20,
+        "location": 1,
+        "type": 4,
+        "id_room": 6
+    },
+    {
+        "name": "M10-20",
+        "capacity": 20,
+        "location": 4,
+        "type": 1,
+        "id_room": 7
+    },
+    {
+        "name": "M10-11",
+        "capacity": 20,
+        "location": 4,
+        "type": 1,
+        "id_room": 8
+    },
+    {
+        "name": "M10-13",
+        "capacity": 20,
+        "location": 4,
+        "type": 1,
+        "id_room": 9
+    },
+    {
+        "name": "M10-12",
+        "capacity": 20,
+        "location": 4,
+        "type": 1,
+        "id_room": 10
+    },
+    {
+        "name": "Sala de estudio 1",
+        "capacity": 5,
+        "location": 2,
+        "type": 2,
+        "id_room": 11
+    },
+    {
+        "name": "Sala de estudio 2",
+        "capacity": 5,
+        "location": 2,
+        "type": 2,
+        "id_room": 12
+    },
+    {
+        "name": "Sala de estudio 3",
+        "capacity": 5,
+        "location": 2,
+        "type": 2,
+        "id_room": 13
+    },
+    {
+        "name": "Sala de estudio 4",
+        "capacity": 5,
+        "location": 2,
+        "type": 2,
+        "id_room": 14
+    },
+    {
+        "name": "Sala Tesistas 1",
+        "capacity": 4,
+        "location": 3,
+        "type": 2,
+        "id_room": 15
+    },
+    {
+        "name": "Sala Tesistas 2",
+        "capacity": 4,
+        "location": 3,
+        "type": 2,
+        "id_room": 16
+    },
+    {
+        "name": "Sala Tesistas 3",
+        "capacity": 4,
+        "location": 3,
+        "type": 2,
+        "id_room": 17
+    }
+]

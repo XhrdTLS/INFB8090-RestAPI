@@ -1,5 +1,4 @@
-GET http://localhost
+GET http://localhost:8080/
 
 ####
-GET http://localhost/v1/rooms
-
+GET http://localhost:8080/v1/rooms
