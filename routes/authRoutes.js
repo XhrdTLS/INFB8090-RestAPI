@@ -6,6 +6,10 @@ const passport = require('passport');
 const Users = require('../model/users');
 const BigNumber = require('bignumber.js');
 
+//probando 
+const helmet = require("helmet");
+app.use(helmet());
+
 router.get('/', authController.isWorking);
 
 function isLoggedIn(req, res, next) {

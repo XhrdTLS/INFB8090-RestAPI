@@ -18,6 +18,10 @@ const userRoutes = require('./routes/userRoutes');
 const syncDatabase = require('./config/dbSync');
 require('./config/auth');
 
+//probando
+const helmet = require("helmet");
+
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -29,6 +33,8 @@ const PORT = process.env.PORT || 8080 || 3000;
 app.use(cors());
 app.use(express.json());
 
+// probando
+app.use(helmet());
 
 //* Aqui invocamos a las rutas! 
 app.use('/v1/test', testRoutes);
