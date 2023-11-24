@@ -34,7 +34,9 @@ app.use(cors());
 app.use(express.json());
 
 // probando
-app.use(helmet());
+app.use(helmet.setCSP({
+    fontSrc: ["'self'", "fonts.googleapis.com"],
+}));
 
 //* Aqui invocamos a las rutas! 
 app.use('/v1/test', testRoutes);
