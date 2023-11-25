@@ -22,21 +22,16 @@ require('./config/auth');
 const helmet = require("helmet");
 
 
-
 const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.helmet();
 
 const PORT = process.env.PORT || 8080 || 3000;
 
 app.use(cors());
 app.use(express.json());
-
-// probando
-app.use(helmet.setCSP({
-    fontSrc: ["'self'", "fonts.googleapis.com"],
-}));
 
 //* Aqui invocamos a las rutas! 
 app.use('/v1/test', testRoutes);
