@@ -9,8 +9,9 @@ passport.use(new GoogleStrategy({
   clientID: process.env.GOOGLE_CLIENT_ID,
   clientSecret: process.env.GOOGLE_CLIENT_SECRET,
   callbackURL: "https://niguto.4.us-1.fl0.io/auth/google/callback",
-  passReqToCallback: true
+  passReqToCallback: true
 },
+
   async function (request, accessToken, refreshToken, profile, done) {
     let user = await Users.findOne({ where: { id: profile.id } });
 
