@@ -9,7 +9,11 @@ const sequelize = new Sequelize({
   database: 'database',
   username: 'fl0user',
   password: 'IH1XDliJZ8ae',
-  port: 5432
+  port: 5432,
+  ssl: {
+    enabled: true,
+    ca: "/path/to/ca.crt"
+  }
 });
 
 
