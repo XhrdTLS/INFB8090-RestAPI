@@ -18,15 +18,10 @@ const userRoutes = require('./routes/userRoutes');
 const syncDatabase = require('./config/dbSync');
 require('./config/auth');
 
-//probando
-const helmet = require("helmet");
-
 
 const app = express();
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
-
-app.helmet();
 
 const PORT = process.env.PORT || 8080 || 3000;
 
